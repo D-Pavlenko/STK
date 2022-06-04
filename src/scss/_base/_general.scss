@@ -1,0 +1,216 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+$accent: #758AD6; // blue
+$darkaccent: #415397; // blue-dark
+$white: #FFFFFF; //white
+$black: #333333; // black
+$grey: #D1D6E4; // grey
+$background: #F0F4F9; //background
+
+$font-size: 18px; // Body Font Size
+$lineheight: 1.7; // Document Line Height
+
+$font: 'Gotham Pro',
+sans-serif;
+$breakepoint_xxl: 1330px;
+$breakepoint_xl: 1024px;
+$breakepoint_lg: 992px;
+$breakepoint_md: 767px;
+$breakepoint_sm: 576px;
+$breakepoint_xsm: 400px;
+
+body {
+  background: $background;
+  font-family: $font;
+  font-size: $font-size;
+
+  @media (max-width: $breakepoint_sm) {
+    font-size: 16px;
+  }
+}
+
+body.no-scroll {
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1330px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  @media (max-width: $breakepoint_xsm) {
+    max-width: 576px;
+  }
+
+  @media (max-width: $breakepoint_sm) {
+    max-width: 767px;
+  }
+
+  @media (max-width: $breakepoint_md) {
+    max-width: 992px;
+  }
+
+  @media (max-width: $breakepoint_lg) {
+    max-width: 1100px;
+  }
+}
+
+h1 {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 155%;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: $black;
+
+  // @media (max-width: $breakepoint_xsm) {
+  //   font-size: 29px;
+  // }
+
+  @media (max-width: $breakepoint_md) {
+    font-size: 32px;
+  }
+
+  @media (max-width: $breakepoint_xsm) {
+    font-size: 29px;
+    line-height: 120%;
+  }
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 42px;
+  line-height: 135%;
+  color: $black;
+
+  @media (max-width: $breakepoint_sm) {
+    font-size: 38px;
+    line-height: 120%;
+  }
+}
+
+h3 {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  color: $black;
+  text-transform: uppercase;
+
+  @media (min-width: $breakepoint_md) {}
+}
+
+h4 {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 19px;
+  text-transform: uppercase;
+  color: $accent;
+}
+
+/* h5 {
+ 
+  @media (min-width: $breakepoint_md) {
+   
+  }
+} */
+
+i {
+  font-family: fontawesome;
+  font-style: normal;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  border: none;
+  border-radius: 4px;
+  font-weight: 400;
+  text-decoration: none;
+  width: 370px;
+  text-align: center;
+  padding-top: 21.5px;
+  padding-bottom: 21.5px;
+
+  @media (max-width: $breakepoint_xsm) {
+    width: 290px;
+  }
+
+  img {
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+  }
+}
+
+.btn-accent {
+  background: $accent;
+  color: $white;
+  transition: background 0.4s ease-out;
+
+  &:hover,
+  &:focus {
+    background: #ACBAEE;
+  }
+
+  &:active {
+    background: $darkaccent;
+  }
+}
+
+.btn-white {
+  background: $white;
+  color: $accent;
+  transition: background 0.4s ease-out;
+
+  &:hover,
+  &:focus {
+    background: #ACBAEE;
+    color: $white;
+  }
+
+  &:active {
+    background: #D8E0FF;
+    color: $white;
+  }
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+@mixin flexcenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin font($fname, $fstyle, $fweight, $furl) {
+
+  @font-face {
+    font-family: $fname;
+    font-style: $fstyle;
+    font-weight: $fweight;
+    src: url($furl) format('woff', 'eot', 'ttf');
+
+    @include font ('Gotham Pro', Normal, 400, '../fonts/GothamPro.eot');
+    @include font ('Gotham Pro', Normal, 400, '../fonts/GothamPro.ttf');
+    @include font ('Gotham Pro', Normal, 400, '../fonts/GothamPro.woff');
+
+    @include font ('Gotham Pro', Light, 300, '../fonts/GothamPro-Light.eot');
+    @include font ('Gotham Pro', Light, 300, '../fonts/GothamPro-Light.ttf');
+    @include font ('Gotham Pro', Light, 300, '../fonts/GothamPro-Light.woff');
+  }
+}
+
+::selection {
+  background-color: $accent;
+  color: $white;
+}
