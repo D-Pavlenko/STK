@@ -1,0 +1,120 @@
+.doctors {
+    padding-top: 90px;
+    padding-bottom: 35px;
+    position: relative;
+
+    &__box {
+        padding-left: 331px;
+
+        &_title {
+            margin-bottom: 30px;
+            max-width: 905px;
+
+            span {
+                color: $accent;
+            }
+        }
+
+        &_text {
+            max-width: 885px;
+            margin-bottom: 65px;
+            font-weight: 300;
+            line-height: 200%;
+            color: $black;
+        }
+    }
+
+    &__title {
+        position: absolute;
+        left: 0;
+        top: 100px;
+        left: 15px;
+
+        @media (max-width: $breakepoint_sm) {
+            top: 50px;
+        }
+    }
+
+    &__box_doctor {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-left: -10px;
+        margin-right: -10px;
+        // position: relative;
+        // overflow-y: hidden;
+
+        &-item {
+            position: relative;
+
+            img {
+                max-width: 310px;
+                margin-left: 5px;
+                margin-right: 5px;
+                margin-bottom: 10px;
+                // position: relative;
+            }
+
+            span {
+                position: relative;
+                display: block;
+                bottom: 14%;
+                left: 50px;
+                max-width: 245px;
+                font-weight: 400;
+                font-size: 22px;
+                line-height: 135%;
+                color: $white;
+            }
+        }
+    }
+
+    &__box_doctor-experience {
+        content: "";
+        position: absolute;
+        background: $accent;
+        color: $white;
+        padding-top: 9px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 13px;
+        border-radius: 15px 2px;
+        width: 125px;
+        height: 30px;
+        text-align: center;
+        top: -15px;
+        left: 50%;
+        transform: translate(-50%);
+        z-index: 20;
+    }
+}
+
+.test {
+    display: block;
+    position: relative;
+
+}
+
+.mobile_nav {
+    position: absolute;
+    z-index: 10;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 310px;
+    // height: 89%;
+    height: 100%;
+
+    padding: 90px 45px 50px;
+    top: 0;
+    left: -100%;
+    // left: 25px;
+    background-color: rgba(117, 138, 214, 0.85);
+    transition: 1s;
+
+}
+
+.doctors__box_doctor:hover .mobile_nav {
+    display: flex;
+    top: 0;
+    left: 25px;
+}

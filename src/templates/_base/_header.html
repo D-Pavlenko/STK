@@ -1,11 +1,15 @@
 <header class="header_wrapper">
     <div class="header container">
-        <a href="index.html" class="header__logo">
-            <img src="./images/header/logo.svg" alt="Лечебно-диагностический центр STK" />
-        </a>
+        <div class="header__logo_wraper">
+            <a href="index.html" class="header__logo">
+                <img src="./images/header/logo.svg" alt="Лечебно-диагностический центр STK" />
+            </a>
+
+            <img class="header__img_mobile-menu" src="./images/header/imgMobileMenu.png" alt="Нас рекомендуют" />
+        </div>
 
         <nav class="header__menu">
-            <a href="#" class="header__menu-item">Врачи</a>
+            <a href="#doctors" class="header__menu-item">Врачи</a>
             <a href="#" class="header__menu-item">Стоимость</a>
             <a href="#" class="header__menu-item">Отзывы</a>
         </nav>
@@ -21,6 +25,79 @@
                 </address>
             </div>
             <a href="#" class="header__info-btn">Записаться</a>
+        </div>
+
+        <nav class="header_nav__mobile">
+            <ul class="header_nav__mobile-list">
+                <li class="header_nav__mobile-list-item">
+                    <a href="#doctors">
+                        Врачи
+                    </a>
+                </li>
+
+                <li class="header_nav__mobile-list-item">
+                    <a href="#test">
+                        Стоимость
+                    </a>
+                </li>
+
+                <li class="header_nav__mobile-list-item">
+                    <a href="#">
+                        Отзывы
+                    </a>
+                </li>
+
+                <li class="header_nav__mobile-list-item">
+                    <a href="#">
+                        Лицензии
+                    </a>
+                </li>
+
+                <li class="header_nav__mobile-list-item">
+                    <a href="#">
+                        Документы
+                    </a>
+                </li>
+            </ul>
+
+            <div class="header_nav__mobile-info">
+                <div class="header_nav__mobile-info-box">
+                    <a href="tel:88462125060" class="header_nav__mobile-info-phone">
+                        <img src="./images/header/call.svg" alt="Позвонить">
+                        8 (846) 212-50-60
+                    </a>
+                    <address class="header_nav__mobile-info-address">
+                        г. Самара, ул. Тухачевского, д.80, оф.1
+                    </address>
+                </div>
+
+                <a href="#" class="header__info-btn header_nav__mobile-info-btn">Записаться</a>
+            </div>
+
+            <div class="header_nav__mobile-footer">
+                <span>
+                    ООО "МКГЦ оториноларингологии и эстетической медицины"
+                </span>
+
+                <a href="#">
+                    Политика обработки персональных данных
+                </a>
+
+                <span>
+                    2022 &#169 Лечебно-диагностический центр STK
+                </span>
+            </div>
+        </nav>
+
+        <div class="nav_button">
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
     </div>
 </header>

@@ -1,0 +1,140 @@
+.visit_wrapper {
+    background: $white;
+}
+
+.visit {
+    padding-top: 100px;
+    padding-bottom: 50px;
+    position: relative;
+
+    @media (max-width: $breakepoint_md) {
+        padding-top: 158px;
+    }
+
+    @media (max-width: $breakepoint_xsm) {
+        padding-top: 132px;
+        padding-bottom: 20px;
+    }
+
+    &__box {
+        padding-left: 331px;
+
+        @media (max-width: $breakepoint_md) {
+            padding-left: 0;
+        }
+
+        &_title {
+            margin-bottom: 39px;
+            max-width: 780px;
+
+            @media (max-width: $breakepoint_md) {
+                margin-bottom: 30px;
+            }
+
+            span {
+                color: $accent;
+            }
+        }
+    }
+
+    &__title {
+        position: absolute;
+        left: 0;
+        top: 110px;
+        left: 15px;
+
+        @media (max-width: $breakepoint_xsm) {
+            top: 93px;
+        }
+    }
+}
+
+.problems__box {
+    display: flex;
+
+    &:not(:last-child) {
+        margin-bottom: 40px;
+
+        @media (max-width: $breakepoint_md) {
+            margin-bottom: 30px;
+        }
+    }
+
+    &_img {
+        width: 310px;
+        margin-right: 20px;
+        border-radius: 8px;
+
+        @media (max-width: $breakepoint_md) {
+            display: none;
+        }
+    }
+
+    &_content {
+        border: 1px solid $grey;
+        border-radius: 4px;
+        padding: 40px 40px 50px;
+
+        @media (max-width: $breakepoint_md) {
+            padding: 30px;
+        }
+
+        &-text {
+            font-weight: 300;
+            font-size: 20px;
+            line-height: 180%;
+            color: $black;
+            margin-bottom: 40px;
+
+            @media (max-width: $breakepoint_md) {
+                font-size: 18px;
+                line-height: 120%;
+            }
+
+            @media (max-width: $breakepoint_sm) {
+                font-size: 14px;
+                line-height: 180%;
+            }
+        }
+
+        &-list {
+            margin: 0;
+            padding: 0;
+
+            &_item {
+                list-style: none;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 19px;
+                color: $black;
+                padding-left: 55px;
+                position: relative;
+                z-index: 1;
+
+                @media (max-width: $breakepoint_md) {
+                    font-size: 18px;
+                }
+
+                @media (max-width: $breakepoint_sm) {
+                    font-size: 14px;
+                }
+
+                &:not(:last-child) {
+                    margin-bottom: 40px;
+                }
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    width: 45px;
+                    height: 1px;
+                    background: $accent;
+                    left: 0;
+                    top: 50%;
+                    z-index: 10;
+                    transform: translateY(-50%);
+                }
+            }
+        }
+    }
+}

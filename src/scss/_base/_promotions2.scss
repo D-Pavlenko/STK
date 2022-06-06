@@ -1,0 +1,187 @@
+.promotions2_wrapper {
+    background: $accent;
+    position: relative;
+}
+
+.promotions2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding-top: 90px;
+    // padding-left: 107px;
+    padding-left: calc(30% + 50px);
+    padding-bottom: 114px;
+
+    @media (max-width: 1800px) {
+        padding-left: calc(38% + 50px);
+    }
+
+    @media (max-width: 1680px) {
+        padding-left: calc(41% + 50px);
+    }
+
+    @media (max-width: 1560px) {
+        padding-left: calc(43% + 50px);
+    }
+
+    @media (max-width: $breakepoint_lg) {
+        padding-right: 25px;
+        padding-left: 25px;
+    }
+
+    @media (max-width: $breakepoint_xsm) {
+        padding-top: 60px;
+        padding-bottom: 40px;
+    }
+
+    &__image {
+        position: absolute;
+        right: calc(50% + 120px);
+        top: 0;
+        bottom: 0;
+        left: 0;
+
+        @media (max-width: 1800px) {
+            right: 50%;
+        }
+
+        @media (max-width: 1500px) {
+            left: 0;
+            right: auto;
+            top: 50%;
+            transform: translate(0, -50%);
+        }
+
+        @media (max-width: 1200px) {
+            transform: translate(0, -25%);
+        }
+
+        @media (max-width: $breakepoint_lg) {
+            display: none;
+        }
+
+        img {
+            height: 100%;
+
+            @media (max-width: 1500px) {
+                min-height: 585px;
+                width: 100%;
+            }
+
+            @media (max-width: 1300px) {
+                min-height: 500px;
+            }
+
+            @media (max-width: 1200px) {
+                height: 100%;
+                min-height: auto;
+                width: auto;
+            }
+        }
+    }
+
+    &__title {
+        color: $darkaccent;
+        margin-bottom: 60px;
+
+        @media (max-width: $breakepoint_xsm) {
+            margin-bottom: 20px;
+        }
+    }
+
+    &__header {
+        color: $white;
+        max-width: 600px;
+        margin-bottom: 50px;
+
+        @media (max-width: $breakepoint_lg) {
+            max-width: auto;
+        }
+
+        @media (max-width: $breakepoint_xsm) {
+            max-width: 300px;
+            margin-bottom: 40px;
+        }
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        max-width: 472px;
+        width: 100%;
+
+        @media (max-width: $breakepoint_lg) {
+            max-width: 720px;
+        }
+
+        &-input {
+            border: none;
+            background: $accent;
+            border-bottom: 1px solid $white;
+            margin-bottom: 50px;
+            padding-bottom: 20px;
+            font-weight: 400;
+            line-height: 17px;
+            letter-spacing: 1.2px;
+            color: $white;
+
+            @media (max-width: $breakepoint_sm) {
+                font-size: 18px;
+            }
+        }
+
+        ::placeholder {
+            font-weight: 400;
+            line-height: 17px;
+            color: $white;
+        }
+
+        :active,
+        :focus {
+            outline: none;
+        }
+
+        &-check {
+            display: flex;
+            margin-bottom: 60px;
+
+            span {
+                font-weight: 300;
+                line-height: 17px;
+                color: $white;
+                margin-left: 10px;
+
+                a {
+                    color: $white;
+                }
+            }
+        }
+
+        &-regist {
+            display: flex;
+
+            @media (max-width: $breakepoint_lg) {
+                justify-content: space-between;
+
+                @media (max-width: $breakepoint_sm) {
+                    flex-direction: column;
+                    align-items: center;
+                }
+            }
+
+            &_price {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-left: 70px;
+
+                @media (max-width: $breakepoint_sm) {
+                    margin-top: 20px;
+                    margin-left: 0;
+
+                }
+            }
+        }
+    }
+}

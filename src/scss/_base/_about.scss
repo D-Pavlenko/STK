@@ -7,8 +7,18 @@
     padding-bottom: 90px;
     position: relative;
 
+    @media (max-width: $breakepoint_md) {
+        padding-top: 140px;
+    }
+
     @media (max-width: $breakepoint_sm) {
-        padding-top: 120px;
+        padding-top: 200px;
+    }
+
+    @media (max-width: $breakepoint_xsm) {
+        padding-top: 88px;
+        padding-right: 20px;
+        padding-left: 20px;
     }
 
     &__box {
@@ -25,6 +35,10 @@
         &_title {
             margin-bottom: 30px;
 
+            @media (max-width: $breakepoint_xsm) {
+                margin-bottom: 25px;
+            }
+
             span {
                 color: $accent;
             }
@@ -32,10 +46,14 @@
 
         &_text {
             max-width: 885px;
-            margin-bottom: 40px;
             font-weight: 300;
             line-height: 200%;
             color: $black;
+            margin-bottom: 40px;
+
+            @media (max-width: $breakepoint_xsm) {
+                margin-bottom: 32px;
+            }
         }
     }
 
@@ -45,8 +63,17 @@
         top: 100px;
         left: 15px;
 
+        @media (max-width: $breakepoint_md) {
+            top: 155px;
+        }
+
         @media (max-width: $breakepoint_sm) {
+            top: 160px;
+        }
+
+        @media (max-width: $breakepoint_xsm) {
             top: 50px;
+            left: 20px;
         }
     }
 
@@ -68,6 +95,10 @@
         border-radius: 5px;
         margin-top: 20px;
         z-index: 1;
+
+        @media (max-width: $breakepoint_xsm) {
+            margin-top: 0;
+        }
 
         &-img {
             width: 80px;

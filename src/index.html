@@ -8,6 +8,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>STK</title>
   <script src="https://kit.fontawesome.com/e65b4061d1.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
   <link rel="stylesheet" href="./css/index.min.css">
 </head>
 
@@ -129,10 +130,541 @@
         </div>
       </section>
     </div>
+
+    <!-- <section class="doctors container" id="doctors">
+      <h4 class="section__title doctors__title">
+        Врачи
+      </h4>
+
+      <div class="doctors__box">
+        <h2 class="doctors__box_title">
+          Вас будут лечить
+          <span>высоко квалифицированные</span>
+          специалисты
+        </h2>
+
+        <p class="doctors__box_text">
+          Врачи в нашей клинике в совершенстве владеют многими методиками лечения и ежегодно помогают тысячам пациентов
+        </p>
+      </div>
+
+      <div class="doctors__box_doctor">
+        <div class="doctors__box_doctor-item">
+          <div class="doctors__box_doctor-experience">Стаж: 34 года</div>
+          <img src="./images/doctors/IvanovSergey.jpg" alt="Иванов Сергей Львович">
+          <span>Иванов Сергей Львович</span>
+        </div>
+
+        <div class="doctors__box_doctor-item">
+          <div class="doctors__box_doctor-experience">Стаж: 6 лет</div>
+          <img src="./images/doctors/KukolkinaValentina.jpg" alt="Куколкина Валентина Владимировна">
+          <span>Куколкина Валентина Владимировна</span>
+        </div>
+
+        <div class="doctors__box_doctor-item">
+          <div class="doctors__box_doctor-experience">Стаж: 15 лет</div>
+          <img src="./images/doctors/NarymbaevOryngali.jpg" alt="Нарымбаев Орынгали Хасанович">
+          <span>Нарымбаев Орынгали Хасанович</span>
+        </div>
+
+        <div class="doctors__box_doctor-item test">
+          <div class="doctors__box_doctor-experience">Стаж: 12 лет</div>
+          <img src="./images/doctors/SashninaNatalya.jpg" alt="Сашнина Наталья Павловна">
+          <span>Сашнина Наталья Павловна</span>
+        </div>
+
+        <div >
+          <spn>
+            ФИО
+          </spn>
+
+          <spn>
+            Описание должности
+          </spn>
+
+          <spn>
+            бтн записаться
+          </spn>
+
+        </div>
+
+      </div>
+    </section>   -->
+
+    <section class="diplomas container" id="test">
+      <div class="diplomas__box">
+        <h2 class="diplomas__box_title">
+          <span>Дипломы&nbsp</span>
+          наших специалистов
+        </h2>
+
+        <div class="diplomas__box_navigation">
+          <div class="swiper-button-next diplomas-button-next"></div>
+          <div class="swiper-button-prev diplomas-button-prev"></div>
+        </div>
+      </div>
+
+      <div class="swiper diplomas-swiper">
+        <div class="swiper-wrapper diplomas-swiper__slides">
+          <div class="swiper-slide diplomas-slide">
+            <img src="./images/diplomas/diplomas1.jpg" alt="diplomas">
+          </div>
+
+          <div class="swiper-slide diplomas-slide">
+            <img src="./images/diplomas/diplomas2.jpg" alt="diplomas">
+          </div>
+
+          <div class="swiper-slide diplomas-slide">
+            <img src="./images/diplomas/diplomas3.jpg" alt="diplomas">
+          </div>
+
+          <div class="swiper-slide diplomas-slide">
+            <img src="./images/diplomas/diplomas4.jpg" alt="diplomas">
+          </div>
+
+          <div class="swiper-slide diplomas-slide">
+            <img src="./images/diplomas/diplomas5.jpg" alt="diplomas">
+          </div>
+
+          <div class="swiper-slide diplomas-slide">
+            <img src="./images/diplomas/diplomas6.jpg" alt="diplomas">
+          </div>
+
+          <div class="swiper-slide diplomas-slide">
+            <img src="./images/diplomas/diplomas3.jpg" alt="diplomas">
+          </div>
+
+          <div class="swiper-slide diplomas-slide">
+            <img src="./images/diplomas/diplomas4.jpg" alt="diplomas">
+          </div>
+
+          <div class="swiper-slide diplomas-slide">
+            <img src="./images/diplomas/diplomas5.jpg" alt="diplomas">
+          </div>
+
+          <div class="swiper-slide diplomas-slide">
+            <img src="./images/diplomas/diplomas6.jpg" alt="diplomas">
+          </div>
+        </div>
+
+        <div class="swiper-pagination diplomas-swiper-pagination"></div>
+      </div>
+
+      <div class="diplomas__navigation">
+        <div class="diplomas__box_navigation-mobile">
+          <div class="swiper-button-next diplomas-button-next"></div>
+          <div class="swiper-button-prev diplomas-button-prev"></div>
+        </div>
+      </div>
+    </section>
+
+    <div class="promotions_wrapper">
+      <section class="promotions container">
+        <h4 class="section__title promotions__title">Акции</h4>
+
+        <h2 class="section__title promotions__header">
+          Запишитесь на прием к лору
+          со скидкой 10% в этом месяце
+        </h2>
+
+        <form class="promotions__form">
+          <input class="promotions__form-input" type="text" placeholder="Имя и Фамилия">
+
+          <input class="promotions__form-input" type="tel" placeholder="Номер телефона">
+
+          <div class="promotions__form-check">
+            <label class="custom-checkbox">
+              <input type="checkbox" class="custom-checkbox">
+
+              <span>
+                Я согласен
+                <a href="#" target="_blank">
+                  на обработку персональных данных
+                </a>
+              </span>
+            </label>
+          </div>
+
+          <div class="promotions__form-regist">
+            <a href="#" class="button btn-white promotions__btn">
+              Записаться на консультацию
+              <img src="./images/general/ArrowNarrowRightOutline Darkaccent.png" alt="Записться на консультацию">
+            </a>
+
+            <div class="promotions__form-regist_price">
+              <span class="price__old">1800 &#8381</span>
+              <span class="price__new">1620 &#8381</span>
+            </div>
+          </div>
+        </form>
+      </section>
+
+      <div class="promotions__image">
+        <img src="./images/promotions/promotions.jpg" alt="Записаться на консультацию">
+      </div>
+
+    </div>
+
+    <section class="description container">
+      <p class="description__text">
+        Оториноларингология — это область медицины, занимающаяся диагностикой и лечением заболеваний одних из важнейших
+        органов человеческого организма — уха, горла и носа. Важность ЛОР-органов обусловлена осуществлением многих
+        функций: слух, речь, проводимость воздуха и пищи, обоняние, равновесие.
+      </p>
+
+      <p class="description__text">
+        Своевременное и качественное лечение ЛОР-заболеваний способно сохранить не только здоровье, но и сделать жизнь
+        более полноценной.
+      </p>
+    </section>
+
+    <div class="visit_wrapper">
+      <section class="visit container">
+        <h4 class="section__title visit__title">
+          когда идти к лору
+        </h4>
+
+        <div class="visit__box">
+          <h2 class="visit__box_title">
+            С какими жалобами и патологиями
+            <span>нужно обратиться ко врачу</span>
+          </h2>
+        </div>
+
+        <div class="problems__box">
+          <img class="problems__box_img" src="./images/visit/problems1.jpg" alt="Жалобы">
+
+          <div class="problems__box_content">
+            <p class="problems__box_content-text">
+              Если у вас появился хотя бы один из перечисленных симптомов, следует незамедлительно обратиться
+              к специалисту, чтобы лечение было своевременным и наиболее эффективным:
+            </p>
+
+            <ul class="problems__box_content-list">
+              <li class="problems__box_content-list_item">
+                Боль и отделяемое из уха
+              </li>
+
+              <li class="problems__box_content-list_item">
+                Снижение слуха (особенно внезапное)
+              </li>
+
+              <li class="problems__box_content-list_item">
+                Заложенность носа, не связанная с ОРЗ
+              </li>
+
+              <li class="problems__box_content-list_item">
+                Появление патологического отделяемого из носа
+              </li>
+
+              <li class="problems__box_content-list_item">
+                Боль в проекции околоносовых пазух
+              </li>
+
+              <li class="problems__box_content-list_item">
+                Боль в глотке и гортани
+              </li>
+
+              <li class="problems__box_content-list_item">
+                Изменение голоса
+              </li>
+
+              <li class="problems__box_content-list_item">
+                Наличие воспалительных инфильтратов и новообразований ЛОР органов
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="problems__box">
+          <img class="problems__box_img" src="./images/visit/problems2.jpg" alt="Жалобы">
+
+          <div class="problems__box_content">
+            <p class="problems__box_content-text">
+              Также наш врач оториноларинголог поможет вам в лечении следующих болезней:
+            </p>
+
+            <ul class="problems__box_content-list">
+              <li class="problems__box_content-list_item">
+                Ринит (острое и хроническое воспаление слизистой оболочки носа)
+              </li>
+
+              <li class="problems__box_content-list_item">
+                Отит (воспалительный процесс в наружном, среднем и внутреннем ухе)
+              </li>
+
+              <li class="problems__box_content-list_item">
+                Синусит (острое и хроническое воспаление околоносовых пазух)
+              </li>
+
+              <li class="problems__box_content-list_item">
+                Острый и хронический тонзиллит
+              </li>
+
+              <li class="problems__box_content-list_item">
+                Фарингит, ларингит (острое и хроническое воспаление слизистой оболочки глотки и гортани)
+              </li>
+
+              <li class="problems__box_content-list_item">
+                Новообразования ЛОР органов
+              </li>
+
+              <li class="problems__box_content-list_item">
+                Нарушение носового дыхания
+              </li>
+
+              <li class="problems__box_content-list_item">
+                Различные виды снижения слуха
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="consultation_wrapper">
+      <section class="consultation container">
+        <h4 class="section__title consultation__title">
+          Консультация
+        </h4>
+
+        <div class="consultation__box">
+          <h2 class="consultation__box_title">
+            Как проходит прием
+            <span>оториноларинголога</span>
+          </h2>
+        </div>
+
+        <div class="consultation__info">
+          <div class="consultation__info_items">
+            <span class="consultation__info_items-num">01</span>
+
+            <p class="consultation__info_items-text">
+              Изучение жалоб и истории болезни пациента
+            </p>
+          </div>
+
+          <div class="consultation__info_items">
+            <span class="consultation__info_items-num">02</span>
+
+            <p class="consultation__info_items-text">
+              Визуальный осмотр уха, носа, глотки и гортани с применением видеоэндоскопического оборудования
+            </p>
+          </div>
+
+          <div class="consultation__info_items">
+            <span class="consultation__info_items-num">03</span>
+
+            <p class="consultation__info_items-text">
+              Для уточнения диагноза могут быть назначены лабораторные исследования, консультации других специалистов
+              и рентгенологическое исследование
+            </p>
+          </div>
+
+          <div class="consultation__info_items">
+            <span class="consultation__info_items-num">04</span>
+
+            <p class="consultation__info_items-text">
+              Установив причину болезни, врач пропишет эффективное лечение для скорейшего выздоровления пациента
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <section class="description container">
+      <p class="description__text">
+        Применение видеоэндоскопии в лечении патологии носа и околоносовых пазух позволяет выявить самые минимальные
+        патологические изменения, неопределяемые при обычном исследовании, а эндохирургические вмешательства позволяют
+        не только наименее инвазивно удалить полипы, новообразования, воспалительный очаг, раскрыть околоносовые пазухи,
+        но и сделать пациента более восприимчивым к топическим (с местным действием) медикаментозным препаратам
+      </p>
+    </section>
+
+    <div class="diagnosis_wrapper">
+      <section class="diagnosis container">
+        <h4 class="section__title diagnosis__title">
+          диагноз и лечение
+        </h4>
+
+        <div class="diagnosis__box">
+          <h2 class="diagnosis__box_title">
+            Постановка диагноза
+            <span>и рекомендации по лечению</span>
+          </h2>
+
+          <p class="diagnosis__box_text">
+            Врач обращает внимание на общее состояние пациента, цвет и состояние кожных покровов, поверхностных
+            лимфоузлов. Каждый случай и лечение индивидуальны
+          </p>
+        </div>
+
+        <div class="diagnosis__info">
+          <div class="diagnosis__info_items">
+            <span class="diagnosis__info_items-num">01</span>
+
+            <p class="diagnosis__info_items-text">
+              Специалист может назначить дополнительные исследования: анализ крови, мочи, мазков из ЛОР-органов,
+              УЗИ-диагностика, компьютерная томография, иммунодиагностика, аудиометрия, рентгенография, ПЦР-диагностика,
+              аллергопробы и так далее
+            </p>
+          </div>
+
+          <div class="diagnosis__info_items">
+            <span class="diagnosis__info_items-num">02</span>
+
+            <p class="diagnosis__info_items-text">
+              При выявлении патологии ЛОР-органов врач назначает медикаментозную терапию, местное выполнение показанных
+              манипуляций или хирургическое лечение в сложных случаях
+            </p>
+
+            <a href="#" class="button btn-accent diagnosis__btn">
+              Записаться на консультацию
+              <img src="./images/general/ArrowNarrowRightOutline.png" alt="Записться на консультацию">
+            </a>
+          </div>
+
+
+        </div>
+      </section>
+    </div>
+
+    <section class="tools container">
+      <h4 class="section__title tools__title">
+        инструменты
+      </h4>
+
+      <div class="tools__box">
+        <h2 class="tools__box_title">
+          Передовое оборудование
+          <span>европейского качества</span>
+        </h2>
+      </div>
+
+      <div class="tools__info">
+        <div class="swiper tools-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="swiper-slide__wrapper">
+                <div class="swiper-slide__tools">
+                  <h4 class="swiper-slide__tools_title">
+                    Аудиометр поликлинический AD 226 Interacoustics, Дания
+                  </h4>
+
+                  <p class="swiper-slide__tools_text">
+                    Предназначен для проведения дифференциальной диагностики слуха методами тональной аудиометрии
+                    по воздуху и кости в поликлинических лечебных заведениях, медицинских центрах, профилактических
+                    кабинетах
+                  </p>
+                </div>
+
+                <img class="swiper-slide__tools_images" src="./images/tools/AD226Interacoustics.jpg"
+                  alt="Аудиометр поликлинический AD 226 Interacoustics, Дания">
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="swiper-slide__wrapper">
+                <div class="swiper-slide__tools">
+                  <h4 class="swiper-slide__tools_title">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  </h4>
+
+                  <p class="swiper-slide__tools_text">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure velit magnam unde autem saepe culpa
+                    eveniet. Animi nemo quo possimus ips
+                  </p>
+                </div>
+
+                <img class="swiper-slide__tools_images" src="./images/tools/AD226Interacoustics.jpg"
+                  alt="Аудиометр поликлинический AD 226 Interacoustics, Дания">
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="swiper-slide__wrapper">
+                <div class="swiper-slide__tools">
+                  <h4 class="swiper-slide__tools_title">
+                    Maxime, debitis corrupti alias, amet, adipisci ad quis sed magni
+                  </h4>
+
+                  <p class="swiper-slide__tools_text">
+                    Fugit aliquid unde dolorum tenetur dolorem nobis voluptas! Repellat expedita qui molestias illo.
+                    Repellendus omnis doloribus nobis voluptas assumenda aliquid tenetur dolorem nobis voluptas!
+                    Repellat expedita qui
+                  </p>
+                </div>
+
+                <img class="swiper-slide__tools_images" src="./images/tools/AD226Interacoustics.jpg"
+                  alt="Аудиометр поликлинический AD 226 Interacoustics, Дания">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tools__navigation">
+          <div class="tools__box_navigation">
+            <div class="swiper-button-next tools-button-next"></div>
+            <div class="swiper-button-prev tools-button-prev"></div>
+          </div>
+
+          <div class="swiper-pagination tools-swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+
+    <div class="promotions2_wrapper">
+      <section class="promotions2 container">
+        <h4 class="section__title promotions2__title">Акции</h4>
+
+        <h2 class="section__title promotions2__header">
+          Запишитесь на осмотр
+          к оториноларингологу со скидкой 10%
+        </h2>
+
+        <form class="promotions2__form">
+          <input class="promotions2__form-input" type="text" placeholder="Имя и Фамилия">
+
+          <input class="promotions2__form-input" type="tel" placeholder="Номер телефона">
+
+          <div class="promotions2__form-check">
+            <label class="custom-checkbox">
+              <input type="checkbox" class="custom-checkbox">
+
+              <span>
+                Я согласен
+                <a href="#" target="_blank">
+                  на обработку персональных данных
+                </a>
+              </span>
+            </label>
+          </div>
+
+          <div class="promotions2__form-regist">
+            <a href="#" class="button btn-white promotions__btn">
+              Записаться на консультацию
+              <img src="./images/general/ArrowNarrowRightOutline Darkaccent.png" alt="Записться на консультацию">
+            </a>
+
+            <div class="promotions2__form-regist_price">
+              <span class="price__old">1800 &#8381</span>
+              <span class="price__new">1620 &#8381</span>
+            </div>
+          </div>
+        </form>
+      </section>
+
+      <div class="promotions2__image">
+        <img src="./images/promotions/promotions2.jpg" alt="Записаться на консультацию">
+      </div>
+    </div>
+
+    <!-- <section class="feedback container">
+    </section> -->
   </main>
 
   {% include "templates/_base/_footer.html" %}
-
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
   <script src="./js/index.min.js"></script>
 </body>
 

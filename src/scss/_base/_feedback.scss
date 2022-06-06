@@ -1,0 +1,35 @@
+.feedback {
+    padding-top: 90px;
+    padding-bottom: 90px;
+
+    @media (max-width: $breakepoint_sm) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    &__box {
+        padding-left: 331px;
+
+        @media (max-width: $breakepoint_md) {
+            padding-left: 0;
+        }
+
+        &_title {
+
+            margin-bottom: 50px;
+            max-width: 905px;
+
+            // @media (max-width: $breakepoint_lg) {
+            //     flex-wrap: wrap;
+            // }
+
+            // @media (max-width: $breakepoint_sm) {
+            //     justify-content: flex-start;
+            // }
+
+            span {
+                color: $accent;
+            }
+        }
+    }
+}

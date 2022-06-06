@@ -1,0 +1,119 @@
+.consultation_wrapper {
+    background: $white;
+}
+
+.consultation {
+    padding-top: 50px;
+    padding-bottom: 100px;
+    position: relative;
+
+    @media (max-width: $breakepoint_md) {
+        padding-bottom: 50px;
+    }
+
+    @media (max-width: $breakepoint_md) {
+        padding-top: 110px;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        background: url(../images/general/consultation-doctor.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        bottom: -13%;
+        left: -255px;
+        width: 620px;
+        height: 620px;
+
+        @media (max-width: $breakepoint_xl) {
+            bottom: -8%;
+            left: -35px;
+            width: 470px;
+            height: 470px;
+        }
+
+        @media (max-width: $breakepoint_lg) {
+            bottom: -8%;
+            left: -35px;
+            width: 420px;
+            height: 420px;
+        }
+
+        @media (max-width: $breakepoint_md) {
+            display: none;
+        }
+    }
+
+    &__box {
+        padding-left: 331px;
+
+        @media (max-width: $breakepoint_md) {
+            padding-left: 0;
+        }
+
+        &_title {
+            margin-bottom: 50px;
+            max-width: 463px;
+
+            @media (max-width: $breakepoint_md) {
+                margin-bottom: 30px;
+            }
+
+            span {
+                color: $accent;
+            }
+        }
+    }
+
+    &__title {
+        position: absolute;
+        left: 0;
+        top: 60px;
+        left: 15px;
+    }
+
+    &__info {
+        padding-left: 331px;
+        display: flex;
+        flex-direction: column;
+
+        @media (max-width: $breakepoint_md) {
+            padding-left: 0;
+        }
+
+        &_items {
+            display: flex;
+            padding-top: 31px;
+            padding-bottom: 31px;
+            border-bottom: 1px solid $grey;
+
+            &:first-child {
+                border-top: 1px solid $grey;
+            }
+
+            &-num {
+                font-weight: 700;
+                font-size: 30px;
+                line-height: 29px;
+                color: $accent;
+                margin-right: 23px;
+
+                @media (max-width: $breakepoint_md) {
+                    font-size: 20px;
+                }
+            }
+
+            &-text {
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 135%;
+                color: $black;
+
+                @media (max-width: $breakepoint_md) {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}

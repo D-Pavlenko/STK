@@ -1,0 +1,118 @@
+.diagnosis_wrapper {
+    background: $white;
+}
+
+.diagnosis {
+    padding-top: 90px;
+    padding-bottom: 90px;
+    position: relative;
+
+    @media (max-width: $breakepoint_md) {
+        padding-top: 100px;
+        padding-bottom: 60px;
+    }
+
+    &__box {
+        padding-left: 331px;
+
+        @media (max-width: $breakepoint_md) {
+            padding-left: 0;
+        }
+
+        &_title {
+            margin-bottom: 30px;
+            max-width: 630px;
+
+            @media (max-width: $breakepoint_md) {
+                margin-bottom: 20px;
+            }
+
+            span {
+                color: $accent;
+            }
+        }
+
+        &_text {
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 200%;
+            color: $black;
+            max-width: 900px;
+            margin-bottom: 60px;
+
+            @media (max-width: $breakepoint_md) {
+                font-size: 14px;
+                margin-bottom: 40px;
+            }
+        }
+    }
+
+    &__title {
+        position: absolute;
+        left: 0;
+        top: 100px;
+        left: 15px;
+
+        @media (max-width: $breakepoint_md) {
+            top: 60px;
+        }
+    }
+
+    &__info {
+        display: flex;
+
+        @media (max-width: $breakepoint_md) {
+            flex-direction: column;
+        }
+
+        &_items {
+            display: flex;
+            flex-direction: column;
+            max-width: 640px;
+
+            &:first-child {
+                margin-right: 20px;
+            }
+
+            &-num {
+                font-weight: 700;
+                font-size: 30px;
+                line-height: 29px;
+                color: $accent;
+                margin-right: 23px;
+                padding-bottom: 35px;
+                border-bottom: 1px solid $grey;
+
+                @media (max-width: $breakepoint_md) {
+                    font-size: 20px;
+                }
+            }
+
+            &-text {
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 135%;
+                color: $black;
+                margin-top: 20px;
+
+                @media (max-width: $breakepoint_md) {
+                    font-size: 18px;
+                }
+            }
+
+            &:first-child {
+                @media (max-width: $breakepoint_md) {
+                    margin-bottom: 40px;
+                }
+            }
+        }
+    }
+
+    &__btn {
+        margin-top: 30px;
+
+        @media (max-width: $breakepoint_md) {
+            margin: 30px auto 0;
+        }
+    }
+}

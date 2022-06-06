@@ -1,0 +1,36 @@
+.swiper-button-prev,
+.swiper-button-next {
+    border: 2px solid $grey;
+    border-radius: 4px;
+    width: 60px;
+    height: 60px;
+    color: $grey;
+    transition: .4s ease-in-out;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+    font-size: 26px;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+    border: 2px solid $accent;
+    color: $accent;
+}
+
+.swiper-pagination-bullet {
+    width: 4px;
+    height: 4px;
+    vertical-align: middle;
+    border-radius: 50%;
+    line-height: 10px;
+    font-size: 14px;
+    background: $accent;
+    align-items: center;
+}
+
+.swiper-pagination-bullet-active {
+    width: 10px;
+    height: 10px;
+}
