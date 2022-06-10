@@ -56,8 +56,20 @@
             margin-bottom: 50px;
             max-width: 463px;
 
+            @media (max-width: $breakepoint_lg) {
+                font-size: 40px;
+            }
+
             @media (max-width: $breakepoint_md) {
                 margin-bottom: 30px;
+            }
+
+            @media (max-width: $breakepoint_sm) {
+                font-size: 35px;
+            }
+
+            @media (max-width: $breakepoint_xsm) {
+                font-size: 29px;
             }
 
             span {

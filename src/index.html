@@ -131,7 +131,7 @@
       </section>
     </div>
 
-    <!-- <section class="doctors container" id="doctors">
+    <section class="doctors container" id="doctors">
       <h4 class="section__title doctors__title">
         Врачи
       </h4>
@@ -148,48 +148,111 @@
         </p>
       </div>
 
-      <div class="doctors__box_doctor">
-        <div class="doctors__box_doctor-item">
-          <div class="doctors__box_doctor-experience">Стаж: 34 года</div>
-          <img src="./images/doctors/IvanovSergey.jpg" alt="Иванов Сергей Львович">
-          <span>Иванов Сергей Львович</span>
+      <div class="swiper doctors-swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide doctor_slide">
+            <div class="doctors__box_card doctor_card">
+              <div class="doctors__box_card-experience">Стаж: 34 года</div>
+              <img class="" src="./images/doctors/IvanovSergey.jpg" alt="Иванов Сергей Львович">
+              <span>Иванов Сергей Львович</span>
+            </div>
+
+            <div class="doctor_info">
+              <span class="doctor_info__name">
+                Иванов Сергей Львович
+              </span>
+
+              <p class="doctor_info__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </p>
+
+              <a class="button btn-doctor" href="#">
+                Записаться
+                <img src="./images/general/ArrowNarrowRightOutline.png" alt="Записться">
+              </a>
+            </div>
+          </div>
+
+          <div class="swiper-slide doctor_slide">
+            <div class="doctors__box_card doctor_card">
+              <div class="doctors__box_card-experience">Стаж: 6 лет</div>
+              <img src="./images/doctors/KukolkinaValentina.jpg" alt="Куколкина Валентина Владимировна">
+              <span>Куколкина Валентина Владимировна</span>
+            </div>
+
+            <div class="doctor_info">
+              <span class="doctor_info__name">
+                Куколкина Валентина Владимировна
+              </span>
+
+              <p class="doctor_info__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta nemo quibusdam deserunt libero, amet
+                tempora, recusandae
+              </p>
+
+              <a class="button btn-doctor" href="#">
+                Записаться
+                <img src="./images/general/ArrowNarrowRightOutline.png" alt="Записться">
+              </a>
+            </div>
+          </div>
+
+          <div class="swiper-slide doctor_slide">
+            <div class="doctors__box_card doctor_card">
+              <div class="doctors__box_card-experience">Стаж: 15 лет</div>
+              <img src="./images/doctors/NarymbaevOryngali.jpg" alt="Нарымбаев Орынгали Хасанович">
+              <span>Нарымбаев Орынгали Хасанович</span>
+            </div>
+
+            <div class="doctor_info">
+              <span class="doctor_info__name">
+                Нарымбаев Орынгали Хасанович
+              </span>
+
+              <p class="doctor_info__text">
+                Врач оториноларинголог, высшая квалификационная категория
+              </p>
+
+              <a class="button btn-doctor" href="#">
+                Записаться
+                <img src="./images/general/ArrowNarrowRightOutline.png" alt="Записться">
+              </a>
+            </div>
+          </div>
+
+          <div class="swiper-slide doctor_slide">
+            <div class="doctors__box_card doctor_card">
+              <div class="doctors__box_card-experience">Стаж: 12 лет</div>
+              <img src="./images/doctors/SashninaNatalya.jpg" alt="Сашнина Наталья Павловна">
+              <span>Сашнина Наталья Павловна</span>
+            </div>
+
+            <div class="doctor_info">
+              <span class="doctor_info__name">
+                Сашнина Наталья Павловна
+              </span>
+
+              <p class="doctor_info__text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut perspiciatis, consequuntur impedit fuga
+                consectetur deleniti expedita voluptatem facilis veritatis corrupti accusantium, aliquam exercitationem,
+              </p>
+
+              <a class="button btn-doctor" href="#">
+                Записаться
+                <img src="./images/general/ArrowNarrowRightOutline.png" alt="Записться">
+              </a>
+            </div>
+          </div>
         </div>
-
-        <div class="doctors__box_doctor-item">
-          <div class="doctors__box_doctor-experience">Стаж: 6 лет</div>
-          <img src="./images/doctors/KukolkinaValentina.jpg" alt="Куколкина Валентина Владимировна">
-          <span>Куколкина Валентина Владимировна</span>
-        </div>
-
-        <div class="doctors__box_doctor-item">
-          <div class="doctors__box_doctor-experience">Стаж: 15 лет</div>
-          <img src="./images/doctors/NarymbaevOryngali.jpg" alt="Нарымбаев Орынгали Хасанович">
-          <span>Нарымбаев Орынгали Хасанович</span>
-        </div>
-
-        <div class="doctors__box_doctor-item test">
-          <div class="doctors__box_doctor-experience">Стаж: 12 лет</div>
-          <img src="./images/doctors/SashninaNatalya.jpg" alt="Сашнина Наталья Павловна">
-          <span>Сашнина Наталья Павловна</span>
-        </div>
-
-        <div >
-          <spn>
-            ФИО
-          </spn>
-
-          <spn>
-            Описание должности
-          </spn>
-
-          <spn>
-            бтн записаться
-          </spn>
-
-        </div>
-
       </div>
-    </section>   -->
+
+      <div class="doctors_swiper__mobile">
+        <div class="swiper-button-next doctors__button-next doctors__btn"></div>
+        <div class="swiper-button-prev doctors__button-prev doctors__btn"></div>
+
+        <div class="swiper-pagination doctors__swiper-pagination"></div>
+      </div>
+    </section>
 
     <section class="diplomas container" id="test">
       <div class="diplomas__box">
@@ -307,7 +370,8 @@
 
     <section class="description container">
       <p class="description__text">
-        Оториноларингология — это область медицины, занимающаяся диагностикой и лечением заболеваний одних из важнейших
+        Оториноларингология — это область медицины, занимающаяся диагностикой и лечением заболеваний одних
+        из важнейших
         органов человеческого организма — уха, горла и носа. Важность ЛОР-органов обусловлена осуществлением многих
         функций: слух, речь, проводимость воздуха и пищи, обоняние, равновесие.
       </p>
@@ -476,7 +540,8 @@
       <p class="description__text">
         Применение видеоэндоскопии в лечении патологии носа и околоносовых пазух позволяет выявить самые минимальные
         патологические изменения, неопределяемые при обычном исследовании, а эндохирургические вмешательства позволяют
-        не только наименее инвазивно удалить полипы, новообразования, воспалительный очаг, раскрыть околоносовые пазухи,
+        не только наименее инвазивно удалить полипы, новообразования, воспалительный очаг, раскрыть околоносовые
+        пазухи,
         но и сделать пациента более восприимчивым к топическим (с местным действием) медикаментозным препаратам
       </p>
     </section>
@@ -505,7 +570,8 @@
 
             <p class="diagnosis__info_items-text">
               Специалист может назначить дополнительные исследования: анализ крови, мочи, мазков из ЛОР-органов,
-              УЗИ-диагностика, компьютерная томография, иммунодиагностика, аудиометрия, рентгенография, ПЦР-диагностика,
+              УЗИ-диагностика, компьютерная томография, иммунодиагностика, аудиометрия, рентгенография,
+              ПЦР-диагностика,
               аллергопробы и так далее
             </p>
           </div>
@@ -514,7 +580,8 @@
             <span class="diagnosis__info_items-num">02</span>
 
             <p class="diagnosis__info_items-text">
-              При выявлении патологии ЛОР-органов врач назначает медикаментозную терапию, местное выполнение показанных
+              При выявлении патологии ЛОР-органов врач назначает медикаментозную терапию, местное выполнение
+              показанных
               манипуляций или хирургическое лечение в сложных случаях
             </p>
 
@@ -523,8 +590,6 @@
               <img src="./images/general/ArrowNarrowRightOutline.png" alt="Записться на консультацию">
             </a>
           </div>
-
-
         </div>
       </section>
     </div>
@@ -659,12 +724,736 @@
       </div>
     </div>
 
-    <!-- <section class="feedback container">
-    </section> -->
+    <div class="price_wrapper" id="price">
+      <section class="price container">
+        <h4 class="section__title price__title">
+          услуги
+        </h4>
+
+        <div class="price__box">
+          <h2 class="price__box_title">
+            Стоимость ЛОР-услуг
+          </h2>
+        </div>
+
+        <div class="price__bottom">
+          <div class="accordion">
+            <div class="accordion_item">
+              <div class="accordion_item__trigger price__services services-title">
+                <img src="./images/price/forum.png" alt="Прием и консультация врача">
+                <p class="price__services-title">
+                  Прием и консультация врача
+                </p>
+              </div>
+
+              <div class="accordion_item__content price__services__wrapper">
+                <div class="price__services">
+                  <img src="./images/price/nose.png" alt="Нос и околоносовые пазухи">
+                  <p class="price__services-text">
+                    Нос и околоносовые пазухи. Лечебные и диагностические манипуляции
+                  </p>
+                </div>
+
+                <div class="price__services">
+                  <img src="./images/price/nose.png" alt="Нос и околоносовые пазухи">
+                  <p class="price__services-text">
+                    Нос и околоносовые пазухи. Хирургическая помощь
+                  </p>
+                </div>
+
+                <div class="price__services">
+                  <img src="./images/price/ears_nose_and_throat.png" alt="Глотка">
+                  <p class="price__services-text">
+                    Глотка. Лечебные и диагностические манипуляции </p>
+                </div>
+
+                <div class="price__services">
+                  <img src="./images/price/ears_nose_and_throat.png" alt="Глотка">
+                  <p class="price__services-text">
+                    Глотка. Хирургическая помощь
+                  </p>
+                </div>
+
+                <div class="price__services">
+                  <img src="./images/price/endocrinology.png" alt="Гортань">
+                  <p class="price__services-text">
+                    Гортань. Лечебные и диагностические манипуляции </p>
+                </div>
+
+                <div class="price__services">
+                  <img src="./images/price/endocrinology.png" alt="Гортань">
+                  <p class="price__services-text">
+                    Гортань. Хирургическая помощь
+                  </p>
+                </div>
+
+                <div class="price__services">
+                  <img src="./images/price/ear.png" alt="Ухо">
+                  <p class="price__services-text">
+                    Ухо. Лечебные и диагностические манипуляции
+                  </p>
+                </div>
+
+                <div class="price__services">
+                  <img src="./images/price/ear.png" alt="Ухо">
+                  <p class="price__services-text">
+                    Ухо. Хирургическая помощь
+                  </p>
+                </div>
+
+                <div class="price__services">
+                  <img src="./images/price/clinical_f.png" alt="Прочее">
+                  <p class="price__services-text">
+                    Прочее
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="price__rate__wrapper">
+            <div class="price__rate">
+              <div class="price__rate_items">
+                <span class="price__rate_items-num">01</span>
+
+                <p class="price__rate_items-text">
+                  Приём (консультация) врача-оториноларинголога первичный
+                </p>
+              </div>
+
+              <div class="price__rate_value">
+                <span class="price__rate_value-num">1620</span>
+
+                <p class="price__rate_value-currency">
+                  &#8381 </p>
+              </div>
+            </div>
+
+            <div class="price__rate">
+              <div class="price__rate_items">
+                <span class="price__rate_items-num">02</span>
+
+                <p class="price__rate_items-text">
+                  Приём (консультация) врача-оториноларинголога) повторный (в течение 1 месяца с тем же заболеванием)
+                </p>
+              </div>
+
+              <div class="price__rate_value">
+                <span class="price__rate_value-num">1200</span>
+
+                <p class="price__rate_value-currency">
+                  &#8381 </p>
+              </div>
+            </div>
+
+            <div class="price__rate">
+              <div class="price__rate_items">
+                <span class="price__rate_items-num">03</span>
+
+                <p class="price__rate_items-text">
+                  Визит к врачу для оценки результатов обследования, дальнейшей тактики </p>
+              </div>
+
+              <div class="price__rate_value">
+                <span class="price__rate_value-num">500</span>
+
+                <p class="price__rate_value-currency">
+                  &#8381 </p>
+              </div>
+            </div>
+
+            <div class="price__rate">
+              <div class="price__rate_items">
+                <span class="price__rate_items-num">04</span>
+
+                <p class="price__rate_items-text">
+                  Приём (консультация) врача-оториноларинголога Иванова С.Л. первичный </p>
+              </div>
+
+              <div class="price__rate_value">
+                <span class="price__rate_value-num">2100</span>
+
+                <p class="price__rate_value-currency">
+                  &#8381 </p>
+              </div>
+            </div>
+
+            <div class="price__rate">
+              <div class="price__rate_items">
+                <span class="price__rate_items-num">05</span>
+
+                <p class="price__rate_items-text">
+                  Визит к врачу-оториноларингологу Иванову С.Л. для оценки результатов обследования, дальнейшей тактики
+                </p>
+              </div>
+
+              <div class="price__rate_value">
+                <span class="price__rate_value-num">1200</span>
+
+                <p class="price__rate_value-currency">
+                  &#8381 </p>
+              </div>
+            </div>
+
+            <div class="price__rate">
+              <div class="price__rate_items">
+                <span class="price__rate_items-num">06</span>
+
+                <p class="price__rate_items-text">
+                  Осмотр оториноларинголога после операции </p>
+              </div>
+
+              <div class="price__rate_value">
+                <span class="price__rate_value-num">300</span>
+
+                <p class="price__rate_value-currency">
+                  &#8381 </p>
+              </div>
+            </div>
+
+            <div class="price__rate">
+              <div class="price__rate_items">
+                <span class="price__rate_items-num">07</span>
+
+                <p class="price__rate_items-text">
+                  Осмотр оториноларинголога профилактический с оформлением справки (дети) </p>
+              </div>
+
+              <div class="price__rate_value">
+                <span class="price__rate_value-num">600</span>
+
+                <p class="price__rate_value-currency">
+                  &#8381 </p>
+              </div>
+            </div>
+
+            <div class="price__rate">
+              <div class="price__rate_items">
+                <span class="price__rate_items-num">08</span>
+
+                <p class="price__rate_items-text">
+                  Осмотр оториноларинголога профилактический с оформлением справки (взрослые) - МСЭ, беременные
+              </div>
+
+              <div class="price__rate_value">
+                <span class="price__rate_value-num">500</span>
+
+                <p class="price__rate_value-currency">
+                  &#8381 </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <section class="feedback container" id="feedback">
+      <h4 class="section__title feedback__title">
+        отзывы
+      </h4>
+
+      <div class="feedback__box">
+        <h2 class="feedback__box_title">
+          Пациенты
+          <span>нас рекомендуют</span>
+          своим близким и друзьям
+        </h2>
+      </div>
+
+      <div class="feedback__box_navigation">
+        <div class="feedback__box_navigation-btn">
+          <div class="swiper-button-next feedback-button-next"></div>
+          <div class="swiper-button-prev feedback-button-prev"></div>
+        </div>
+      </div>
+
+      <div class="swiper feedback-swiper">
+        <div class="swiper-wrapper feedback-swiper__slides">
+          <div class="swiper-slide feedback-slide">
+            <h3 class="feedback-slide__title">Иван Иванов, 40 лет</h3>
+
+            <div class="feedback-slide__stars">
+              <img class="feedback-slide__stars-img" src="./images/feedback/star.svg" alt="star">
+              <img class="feedback-slide__stars-img" src="./images/feedback/star.svg" alt="star">
+              <img class="feedback-slide__stars-img" src="./images/feedback/star.svg" alt="star">
+              <img class="feedback-slide__stars-img" src="./images/feedback/star.svg" alt="star">
+              <img class="feedback-slide__stars-img" src="./images/feedback/star.svg" alt="star">
+            </div>
+
+            <div class="read-more-container">
+              <p class="feedback-slide__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nec non tempor amet leo lacus purus in morbi
+                vestibulum. Tempor facilisis nunc sapien gravida mauris, sed. Malesuada donec vel aliquet id diam
+                maecenas donec. Sit diam turpis lorem sed tellus diam cras...
+                <span class="moreText">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nec non tempor amet leo lacus purus in
+                  morbi vestibulum. Tempor facilisis nunc sapien gravida mauris, sed. Malesuada donec vel aliquet id
+                  diam maecenas donec.
+                </span>
+              </p>
+
+              <span class="feedback-slide__btn read-more-btn">
+                Читать полностью
+              </span>
+            </div>
+
+            <div class="feedback-slide__box">
+              <img class="feedback-slide__box-img" src="./images/feedback/feedback-photo1.png" alt="Врач фото">
+
+              <div class="feedback-slide__box_info">
+                <span class="feedback-slide__box_position">
+                  Врач:
+                </span>
+
+                <span class="feedback-slide__box_name">
+                  Иванов Сергей Львович
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide feedback-slide">
+            <h3 class="feedback-slide__title">Иван Иванов, 40 лет</h3>
+
+            <div class="feedback-slide__stars">
+              <img class="feedback-slide__stars-img" src="./images/feedback/star.svg" alt="star">
+              <img class="feedback-slide__stars-img" src="./images/feedback/star.svg" alt="star">
+              <img class="feedback-slide__stars-img" src="./images/feedback/star.svg" alt="star">
+              <img class="feedback-slide__stars-img" src="./images/feedback/star.svg" alt="star">
+              <img class="feedback-slide__stars-img" src="./images/feedback/star.svg" alt="star">
+            </div>
+
+            <div class="read-more-container">
+              <p class="feedback-slide__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nec non tempor amet leo lacus purus in morbi
+                vestibulum. Tempor facilisis nunc sapien gravida mauris, sed. Malesuada donec vel aliquet id diam
+                maecenas donec. Sit diam turpis lorem sed tellus diam cras...
+                <span class="moreText">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nec non tempor amet leo lacus purus in
+                  morbi vestibulum. Tempor facilisis nunc sapien gravida mauris, sed. Malesuada donec vel aliquet id
+                  diam maecenas donec.
+                </span>
+              </p>
+
+              <span class="feedback-slide__btn read-more-btn">
+                Читать полностью
+              </span>
+            </div>
+
+            <div class="feedback-slide__box">
+              <img class="feedback-slide__box-img" src="./images/feedback/feedback-photo1.png" alt="Врач фото">
+
+              <div class="feedback-slide__box_info">
+                <span class="feedback-slide__box_position">
+                  Врач:
+                </span>
+
+                <span class="feedback-slide__box_name">
+                  Иванов Сергей Львович
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide feedback-slide">
+            <h3 class="feedback-slide__title">Иван Иванов, 40 лет</h3>
+
+            <div class="feedback-slide__stars">
+              <img class="feedback-slide__stars-img" src="./images/feedback/star.svg" alt="star">
+              <img class="feedback-slide__stars-img" src="./images/feedback/star.svg" alt="star">
+              <img class="feedback-slide__stars-img" src="./images/feedback/star.svg" alt="star">
+              <img class="feedback-slide__stars-img" src="./images/feedback/star.svg" alt="star">
+              <img class="feedback-slide__stars-img" src="./images/feedback/star.svg" alt="star">
+            </div>
+
+            <div class="read-more-container">
+              <p class="feedback-slide__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nec non tempor amet leo lacus purus in morbi
+                vestibulum. Tempor facilisis nunc sapien gravida mauris, sed. Malesuada donec vel aliquet id diam
+                maecenas donec. Sit diam turpis lorem sed tellus diam cras...
+                <span class="moreText">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nec non tempor amet leo lacus purus in
+                  morbi vestibulum. Tempor facilisis nunc sapien gravida mauris, sed. Malesuada donec vel aliquet id
+                  diam maecenas donec.
+                </span>
+              </p>
+
+              <span class="feedback-slide__btn read-more-btn">
+                Читать полностью
+              </span>
+            </div>
+
+            <div class="feedback-slide__box">
+              <img class="feedback-slide__box-img" src="./images/feedback/feedback-photo1.png" alt="Врач фото">
+
+              <div class="feedback-slide__box_info">
+                <span class="feedback-slide__box_position">
+                  Врач:
+                </span>
+
+                <span class="feedback-slide__box_name">
+                  Иванов Сергей Львович
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide feedback-slide">
+            <h3 class="feedback-slide__title">Иван Иванов, 40 лет</h3>
+
+            <div class="feedback-slide__stars">
+              <img class="feedback-slide__stars-img" src="./images/feedback/star.svg" alt="star">
+              <img class="feedback-slide__stars-img" src="./images/feedback/star.svg" alt="star">
+              <img class="feedback-slide__stars-img" src="./images/feedback/star.svg" alt="star">
+              <img class="feedback-slide__stars-img" src="./images/feedback/star.svg" alt="star">
+              <img class="feedback-slide__stars-img" src="./images/feedback/star.svg" alt="star">
+            </div>
+
+            <div class="read-more-container">
+              <p class="feedback-slide__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nec non tempor amet leo lacus purus in morbi
+                vestibulum. Tempor facilisis nunc sapien gravida mauris, sed. Malesuada donec vel aliquet id diam
+                maecenas donec. Sit diam turpis lorem sed tellus diam cras...
+                <span class="moreText">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nec non tempor amet leo lacus purus in
+                  morbi vestibulum. Tempor facilisis nunc sapien gravida mauris, sed. Malesuada donec vel aliquet id
+                  diam maecenas donec.
+                </span>
+              </p>
+
+              <span class="feedback-slide__btn read-more-btn">
+                Читать полностью
+              </span>
+            </div>
+
+            <div class="feedback-slide__box">
+              <img class="feedback-slide__box-img" src="./images/feedback/feedback-photo1.png" alt="Врач фото">
+
+              <div class="feedback-slide__box_info">
+                <span class="feedback-slide__box_position">
+                  Врач:
+                </span>
+
+                <span class="feedback-slide__box_name">
+                  Иванов Сергей Львович
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide feedback-slide">
+            <h3 class="feedback-slide__title">Иван Иванов, 40 лет</h3>
+
+            <div class="feedback-slide__stars">
+              <img class="feedback-slide__stars-img" src="./images/feedback/star.svg" alt="star">
+              <img class="feedback-slide__stars-img" src="./images/feedback/star.svg" alt="star">
+              <img class="feedback-slide__stars-img" src="./images/feedback/star.svg" alt="star">
+              <img class="feedback-slide__stars-img" src="./images/feedback/star.svg" alt="star">
+              <img class="feedback-slide__stars-img" src="./images/feedback/star.svg" alt="star">
+            </div>
+
+            <div class="read-more-container">
+              <p class="feedback-slide__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nec non tempor amet leo lacus purus in morbi
+                vestibulum. Tempor facilisis nunc sapien gravida mauris, sed. Malesuada donec vel aliquet id diam
+                maecenas donec. Sit diam turpis lorem sed tellus diam cras...
+                <span class="moreText">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nec non tempor amet leo lacus purus in
+                  morbi vestibulum. Tempor facilisis nunc sapien gravida mauris, sed. Malesuada donec vel aliquet id
+                  diam maecenas donec.
+                </span>
+              </p>
+
+              <span class="feedback-slide__btn read-more-btn">
+                Читать полностью
+              </span>
+            </div>
+
+            <div class="feedback-slide__box">
+              <img class="feedback-slide__box-img" src="./images/feedback/feedback-photo1.png" alt="Врач фото">
+
+              <div class="feedback-slide__box_info">
+                <span class="feedback-slide__box_position">
+                  Врач:
+                </span>
+
+                <span class="feedback-slide__box_name">
+                  Иванов Сергей Львович
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="feedback-swiper__mobile">
+        <div class="swiper-pagination feedback-swiper-pagination"></div>
+
+        <div class="swiper-button-next feedback-button-next feedback_btn"></div>
+        <div class="swiper-button-prev feedback-button-prev feedback_btn"></div>
+      </div>
+    </section>
+
+    <section class="video__feedback container">
+      <div class="video__feedback__box_navigation">
+        <div class="video__feedback__box_navigation-btn">
+          <div class="swiper-button-next video__feedback-button-next"></div>
+          <div class="swiper-button-prev video__feedback-button-prev"></div>
+        </div>
+      </div>
+
+      <div class="swiper video__feedback-swiper">
+        <div class="swiper-wrapper video__feedback-swiper__slides">
+          <div class="swiper-slide video__feedback-slide">
+            <div class="video__feedback-wrap">
+              <img class="video__feedback-wrap__video" src="./images/feedback/video1.jpg" alt="">
+            </div>
+          </div>
+
+          <div class="swiper-slide video__feedback-slide">
+            <div class="video__feedback-wrap">
+              <img class="video__feedback-wrap__video" src="./images/feedback/video2.jpg" alt="">
+            </div>
+          </div>
+
+          <div class="swiper-slide video__feedback-slide">
+            <div class="video__feedback-wrap">
+              <img class="video__feedback-wrap__video" src="./images/feedback/video2.jpg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="video__feedback-swiper__mobile">
+        <div class="swiper-pagination video__feedback-swiper-pagination"></div>
+
+        <div class="swiper-button-next video__feedback-button-next video__btn"></div>
+        <div class="swiper-button-prev video__feedback-button-prev video__btn"></div>
+      </div>
+
+      <a href="#" class="button btn-accent video__feedback__btn">
+        Записаться на консультацию
+        <img src="./images/general/ArrowNarrowRightOutline.png" alt="Записться на консультацию">
+      </a>
+    </section>
+
+    <div class="photogallery_wrapper">
+      <section class="photogallery container">
+        <div class="photogallery__box_wrapper">
+          <div class="swiper photogallery-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide photogallery-slide">
+                <img src="./images/photogallery/photogallery1.jpg" alt="Фото">
+              </div>
+
+              <div class="swiper-slide photogallery-slide">
+                <img src="./images/photogallery/photogallery2.jpg" alt="Фото">
+              </div>
+
+              <div class="swiper-slide photogallery-slide">
+                <img src="./images/photogallery/photogallery3.jpg" alt="Фото">
+              </div>
+
+              <div class="swiper-slide photogallery-slide">
+                <img src="./images/photogallery/photogallery4.jpg" alt="Фото">
+              </div>
+
+              <div class="swiper-slide photogallery-slide">
+                <img src="./images/photogallery/photogallery3.jpg" alt="Фото">
+              </div>
+            </div>
+          </div>
+
+          <div class="photogallery-box">
+            <h4 class="section__title photogallery__title">фотогалерея</h4>
+
+            <h2 class="section__title photogallery__header">
+              Чистые современные кабинеты
+              <span>и новейшее оборудование</span>
+            </h2>
+
+            <p class="photogallery__text">
+              Наш центр является современной многопрофильной клиникой, охватывающей больше 20 направлений медицины,
+              в том числе оториноларингологию
+            </p>
+
+            <div class="photogallery__control">
+              <div class="swiper-button-next photogallery__button-next photogallery__btn"></div>
+              <div class="swiper-button-prev photogallery__button-prev photogallery__btn"></div>
+            </div>
+
+            <div class="photogallery-mini-wraper">
+              <div class="mini-photogallery">
+                <img src="./images/photogallery/photo2.jpg" alt="Фото">
+              </div>
+
+              <div class="mini-photogallery">
+                <img src="./images/photogallery/photo3.jpg" alt="Фото">
+              </div>
+
+              <div class="mini-photogallery">
+                <img src="./images/photogallery/photo4.jpg" alt="Фото">
+              </div>
+
+              <div class="mini-photogallery">
+                <img src="./images/photogallery/photo5.jpg" alt="Фото">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="photogallery_swiper__mobile">
+          <div class="swiper-button-next photogallery__button-next photogallery__btn"></div>
+          <div class="swiper-button-prev photogallery__button-prev photogallery__btn"></div>
+
+          <div class="swiper-pagination photogallery__swiper-pagination"></div>
+        </div>
+      </section>
+    </div>
+
+    <div class="promotions_wrapper">
+      <section class="promotions container">
+        <h4 class="section__title promotions__title">Консультация</h4>
+
+        <h2 class="section__title promotions__header">
+          Запишитесь на осмотр к лору
+        </h2>
+
+        <form class="promotions__form">
+          <input class="promotions__form-input" type="text" placeholder="Имя и Фамилия">
+
+          <input class="promotions__form-input" type="tel" placeholder="Номер телефона">
+
+          <div class="promotions__form-check">
+            <label class="custom-checkbox">
+              <input type="checkbox" class="custom-checkbox">
+
+              <span>
+                Я согласен
+                <a href="#" target="_blank">
+                  на обработку персональных данных
+                </a>
+              </span>
+            </label>
+          </div>
+
+          <div class="promotions__form-regist">
+            <a href="#" class="button btn-white promotions__btn">
+              Записаться на консультацию
+              <img src="./images/general/ArrowNarrowRightOutline Darkaccent.png" alt="Записться на консультацию">
+            </a>
+
+            <div class="promotions__form-regist_price">
+              <span class="price__old">1800 &#8381</span>
+              <span class="price__new">1620 &#8381</span>
+            </div>
+          </div>
+        </form>
+      </section>
+
+      <div class="promotions__image">
+        <img src="./images/promotions/promotions3.jpg" alt="Записаться на консультацию">
+      </div>
+
+    </div>
+
+    <div class="contacts_wrapper">
+      <section class="contacts container">
+        <h4 class="contacts__title diagnosis__title">
+          контакты
+        </h4>
+
+        <div class="contacts__box">
+          <h2 class="contacts__box_title">
+            В клинике STK
+            <span>вам всегда рады!</span>
+          </h2>
+
+          <p class="contacts__box_text">
+            Наш медицинский центр благодарен за ваше доверие. Мы стремимся добиться безупречности во всем: от встречи
+            пациентов до результатов завершённого лечения
+          </p>
+        </div>
+      </section>
+
+      <div class="contacts__info">
+        <div class="contacts__info_items">
+          <span class="contacts__info_items-title">
+            Телефон
+          </span>
+
+          <div class="contacts__info_items-info">
+            <a href="tel:88462125060" class="contacts__info_items-info-phone">
+              <img src="./images//contacts/call.svg" alt="Позвонить">
+              8 (846) 212-50-60
+            </a>
+          </div>
+
+          <span class="contacts__info_items-title">
+            Адрес
+          </span>
+
+          <span class="contacts__info_items-info">
+            <address class="contacts__info_items-info-address">
+              <img src="./images/contacts/address.svg" alt="Адрес">
+              г. Самара, ул. Тухачевского, д.80, оф.1
+            </address>
+          </span>
+
+          <span class="contacts__info_items-title">
+            Режим работы
+          </span>
+
+          <span class="contacts__info_items-info">
+            <img src="./images/contacts/clock.svg" alt="Режим работы">
+
+            <span class="contacts__info_items-info-schedule">
+              <span>ПН - ПТ: с 08.00 до 20.00</span>
+              <span>СБ: с 08.00 до 16.00</span>
+            </span>
+          </span>
+
+          <span class="contacts__info_items-title">
+            EMAIL
+          </span>
+
+          <span class="contacts__info_items-info">
+            <span class="contacts__info_items-info-mail">
+              <img src="./images/contacts/mail.svg" alt="Написать на E-mail">
+              info@stk-clinic.ru
+            </span>
+          </span>
+        </div>
+
+        <div class="contacts__info_socials">
+          <a class="contacts__info_socials-item" href="#">
+            <img src="./images/contacts/vk.png" alt="VKontakte">
+          </a>
+
+          <a class="contacts__info_socials-item" href="#">
+            <img src="./images/contacts/whatsapp.png" alt="Whats App">
+          </a>
+
+          <a class="contacts__info_socials-item" href="#">
+            <img src="./images/contacts/youtube.png" alt="YouTube">
+          </a>
+
+          <a class="contacts__info_socials-item" href="#">
+            <img src="./images/contacts/viber.png" alt="Viber">
+          </a>
+        </div>
+      </div>
+
+      <div class="contacts_map" id="map"></div>
+      <div class="contacts_map-mobile" id="map-mobile"></div>
+
+    </div>
   </main>
 
   {% include "templates/_base/_footer.html" %}
   <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=<ваш API-ключ>"></script>
+
   <script src="./js/index.min.js"></script>
 </body>
 

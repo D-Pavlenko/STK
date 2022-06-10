@@ -6,9 +6,33 @@
     &__box {
         padding-left: 331px;
 
+        @media (max-width: $breakepoint_md) {
+            padding-left: 230px;
+        }
+
+        @media (max-width: $breakepoint_sm) {
+            padding-left: 0;
+        }
+
         &_title {
             margin-bottom: 30px;
             max-width: 905px;
+
+            @media (max-width: $breakepoint_lg) {
+                font-size: 36px;
+            }
+
+            @media (max-width: $breakepoint_md) {
+                font-size: 30px;
+            }
+
+            @media (max-width: $breakepoint_md) {
+                max-width: 320px;
+            }
+
+            @media (max-width: $breakepoint_xsm) {
+                font-size: 28px;
+            }
 
             span {
                 color: $accent;
@@ -35,86 +59,194 @@
         }
     }
 
-    &__box_doctor {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        margin-left: -10px;
-        margin-right: -10px;
-        // position: relative;
-        // overflow-y: hidden;
+    &__box_card {
+        position: relative;
+        padding-top: 15px;
+        margin-bottom: 35px;
 
-        &-item {
-            position: relative;
+        @media (max-width: $breakepoint_xsm) {
+            margin-bottom: 0;
+        }
 
-            img {
-                max-width: 310px;
-                margin-left: 5px;
-                margin-right: 5px;
-                margin-bottom: 10px;
-                // position: relative;
+        overflow: hidden;
+
+        img {
+            max-width: 310px;
+        }
+
+        span {
+            position: absolute;
+            display: block;
+            bottom: 25px;
+            left: 25px;
+            max-width: 245px;
+            font-weight: 400;
+            font-size: 22px;
+            line-height: 135%;
+            color: $white;
+
+            @media (max-width: $breakepoint_xsm) {
+                bottom: 50px;
             }
+        }
 
-            span {
-                position: relative;
-                display: block;
-                bottom: 14%;
-                left: 50px;
-                max-width: 245px;
-                font-weight: 400;
-                font-size: 22px;
-                line-height: 135%;
-                color: $white;
-            }
+        &-experience {
+            content: "";
+            position: absolute;
+            background: $accent;
+            color: $white;
+            padding-top: 9px;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 13px;
+            border-radius: 15px 2px;
+            width: 125px;
+            height: 30px;
+            text-align: center;
+            top: 0;
+            left: 92.5px;
+            z-index: 20;
+        }
+    }
+}
+
+.doctor_slide {
+    position: relative;
+    width: 310px;
+    height: 550px;
+    overflow: hidden;
+
+    @media (max-width: $breakepoint_xsm) {
+        width: 280px;
+    }
+
+    img {
+        border-radius: 4px;
+    }
+}
+
+.doctor_slide .doctor_card {
+    width: 310px;
+
+    @media (max-width: $breakepoint_xsm) {
+        width: 280px;
+    }
+}
+
+.doctor_slide .doctor_card,
+.doctor_slide .doctor_info {
+    width: 310px;
+    height: 550px;
+    position: absolute;
+    transition: .7s;
+
+    @media (max-width: $breakepoint_xsm) {
+        width: 280px;
+    }
+}
+
+.doctor_slide .doctor_info {
+    background: rgba(117, 138, 214, 0.85);
+    top: 15px;
+    left: 100%;
+}
+
+.doctor_slide:hover .doctor_info {
+    top: 15px;
+    left: 0;
+
+    @media (max-width: $breakepoint_xsm) {
+        height: 498px;
+    }
+}
+
+.doctor_info {
+    color: $white;
+    padding: 40px 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    &__name {
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 135%;
+        margin-bottom: 15px;
+
+        @media (max-width: $breakepoint_xsm) {
+            margin-bottom: 0;
         }
     }
 
-    &__box_doctor-experience {
-        content: "";
-        position: absolute;
-        background: $accent;
-        color: $white;
-        padding-top: 9px;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 13px;
-        border-radius: 15px 2px;
-        width: 125px;
-        height: 30px;
-        text-align: center;
-        top: -15px;
-        left: 50%;
-        transform: translate(-50%);
-        z-index: 20;
+    &__text {
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 135%;
+        margin-bottom: 15px;
     }
 }
 
-.test {
-    display: block;
+.btn-doctor {
+    border: 1px solid $white;
+    color: $white;
+    width: 260px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    transition: background 0.4s ease-out;
+
+    @media (max-width: $breakepoint_xsm) {
+        width: 220px;
+    }
+
+    &:hover,
+    &:focus {
+        border: 1px solid #ACBAEE;
+        background: #ACBAEE;
+    }
+
+    &:active {
+        background: $darkaccent;
+    }
+}
+
+.doctors_swiper__mobile {
+    display: none;
+    justify-content: space-between;
+    height: 60px;
     position: relative;
 
+    @media (max-width: $breakepoint_lg) {
+        display: flex;
+        margin-top: 10px;
+    }
+
+    @media (max-width: $breakepoint_md) {
+        margin-top: 20px;
+    }
+
+    @media (max-width: $breakepoint_xsm) {
+        margin-top: 0;
+    }
 }
 
-.mobile_nav {
+.swiper-button-next.doctors__btn,
+.swiper-button-prev.doctors__btn {
+    top: 36%;
+    display: none;
+
+    @media (max-width: $breakepoint_lg) {
+        display: flex;
+    }
+}
+
+.swiper-horizontal>.swiper-pagination-bullets.doctors__swiper-pagination,
+.swiper-pagination-bullets.swiper-pagination-horizontal.doctors__swiper-pagination,
+.swiper-pagination-custom.doctors__swiper-pagination,
+.swiper-pagination-fraction.doctors__swiper-pagination {
     position: absolute;
-    z-index: 10;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 310px;
-    // height: 89%;
-    height: 100%;
-
-    padding: 90px 45px 50px;
-    top: 0;
-    left: -100%;
-    // left: 25px;
-    background-color: rgba(117, 138, 214, 0.85);
-    transition: 1s;
-
-}
-
-.doctors__box_doctor:hover .mobile_nav {
-    display: flex;
-    top: 0;
-    left: 25px;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    width: 100%;
+    z-index: 4;
 }
