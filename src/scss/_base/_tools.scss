@@ -18,8 +18,17 @@
             margin-bottom: 100px;
             max-width: 574px;
 
+            @media (max-width: $breakepoint_lg) {
+                font-size: 34px;
+            }
+
             @media (max-width: $breakepoint_md) {
                 margin-bottom: 35px;
+            }
+
+            @media (max-width: $breakepoint_sm) {
+                font-size: 25px;
+                max-width: 460px;
             }
 
             span {

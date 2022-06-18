@@ -24,7 +24,7 @@
             max-width: 630px;
 
             @media (max-width: $breakepoint_lg) {
-                max-width: 300px;
+                font-size: 40px;
             }
 
             @media (max-width: $breakepoint_md) {
@@ -81,7 +81,13 @@
         border-left: 1px solid #D1D6E4;
         border-right: 1px solid #D1D6E4;
         border-top: 1px solid #D1D6E4;
+        border-bottom: none;
+        background: transparent;
         padding: 23px 20px;
+        cursor: pointer;
+        position: relative;
+        width: 100%;
+        text-align: left;
 
         @media (max-width: $breakepoint_md) {
             max-width: 737px;
@@ -93,7 +99,7 @@
             border-bottom: 1px solid #D1D6E4;
         }
 
-        img {
+        svg {
             width: 30px;
             height: 30px;
             margin-right: 10px;
@@ -103,12 +109,6 @@
             max-width: 305px;
             line-height: 120%;
             color: $black;
-        }
-
-        &-title {
-            font-weight: 400;
-            line-height: 120%;
-            color: $white;
         }
     }
 
@@ -179,7 +179,7 @@
 
 .services-title {
     position: relative;
-    border-left: 5px solid $darkaccent;
+    color: $black;
     z-index: 10;
     max-width: 420px;
     width: 100%;
@@ -187,19 +187,6 @@
     @media (max-width: $breakepoint_md) {
         max-width: 737px;
     }
-}
-
-.services-title::before {
-    content: '';
-    position: absolute;
-    background-image: url(../images/price/services.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    bottom: 0;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: -1;
 }
 
 .accordion {
@@ -215,15 +202,16 @@
 
 .accordion_item {
     position: relative;
+    z-index: 20;
 }
 
 .accordion_item::before {
+    display: none;
     content: '';
     position: absolute;
     right: 27px;
     top: 40%;
     z-index: 30;
-    display: inline-block;
     width: 12px;
     height: 12px;
     margin-right: 5px;
@@ -231,6 +219,10 @@
     border-width: 2px 2px 0 0;
     transform: translateY(-25%) rotate(135deg);
     transition: 0.4s ease-in-out;
+
+    @media (max-width: $breakepoint_md) {
+        display: inline-block;
+    }
 }
 
 .accordion_item__active::before {
@@ -239,4 +231,42 @@
 
 .accordion_item__active .accordion_item__content {
     display: block;
+}
+
+.tab-container {
+    position: relative;
+    max-width: 750px;
+    width: 100%;
+    padding: 0;
+}
+
+.tab-content {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.tab-content.is-active {
+    position: static;
+    opacity: 1;
+}
+
+.price__services.is-active {
+    position: relative;
+    background-image: url(../images/price/services.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    border-left: 5px solid $darkaccent;
+
+    p {
+        color: $white;
+    }
+
+    .img-svg path {
+        fill: $white;
+    }
 }

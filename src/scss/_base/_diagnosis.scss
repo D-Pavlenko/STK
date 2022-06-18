@@ -23,6 +23,10 @@
             margin-bottom: 30px;
             max-width: 630px;
 
+            @media (max-width: $breakepoint_lg) {
+                font-size: 30px;
+            }
+
             @media (max-width: $breakepoint_md) {
                 margin-bottom: 20px;
             }

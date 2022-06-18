@@ -85,8 +85,16 @@
             max-width: auto;
         }
 
+        @media (max-width: 615px) {
+            max-width: 455px;
+        }
+
+        @media (max-width: $breakepoint_sm) {
+            max-width: 405px;
+        }
+
         @media (max-width: $breakepoint_xsm) {
-            max-width: 300px;
+            max-width: 290px;
             margin-bottom: 40px;
             font-size: 27px;
         }

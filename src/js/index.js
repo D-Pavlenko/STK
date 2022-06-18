@@ -257,6 +257,56 @@ const swiperTools = new Swiper('.tools-swiper', {
     },
 });
 
+// Price Section
+
+const tabItems = Array.from(document.querySelectorAll('.price__services'))
+const contentItems = Array.from(document.querySelectorAll('.tab-content'))
+
+const clearActiveClass = (element, className = 'is-active') => {
+    element.find(item => item.classList.remove(`${className}`))
+}
+
+const setActiveClass = (element, index, className = 'is-active') => {
+    element[index].classList.add(`${className}`)
+}
+
+const checkoutTabs = (item, index) => {
+    item.addEventListener('click', () => {
+
+        if (item.classList.contains('is-active')) return
+
+        clearActiveClass(tabItems)
+        clearActiveClass(contentItems)
+
+        setActiveClass(tabItems, index)
+        setActiveClass(contentItems, index)
+    })
+}
+
+tabItems.forEach(checkoutTabs)
+
+// SVG Color
+
+import $ from 'jquery';
+
+$("img.img-svg").each(function () {
+    var $img = $(this);
+    var imgClass = $img.attr("class");
+    var imgURL = $img.attr("src");
+    $.get(imgURL, function (data) {
+        var $svg = $(data).find("svg");
+        if (typeof imgClass !== "undefined") {
+            $svg = $svg.attr("class", imgClass + " replaced-svg");
+        }
+        $svg = $svg.removeAttr("xmlns:a");
+        if (!$svg.attr("viewBox") && $svg.attr("height") && $svg.attr("width")) {
+            $svg.attr("viewBox", "0 0 " + $svg.attr("height") + " " + $svg.attr("width"))
+        }
+        $img.replaceWith($svg);
+    }, "xml");
+});
+
+
 // Swiper Feedback
 
 const swiperFeedback = new Swiper('.feedback-swiper', {
@@ -301,7 +351,6 @@ const swiperFeedback = new Swiper('.feedback-swiper', {
         pageUpDown: true,
     },
 });
-
 
 // Read More
 
@@ -393,13 +442,16 @@ const swiperPhotogallery = new Swiper('.photogallery-swiper', {
     },
 });
 
+// Accordion
+
 document.querySelectorAll('.accordion_item__trigger').forEach((item) =>
     item.addEventListener('click', () => {
         const parent = item.parentNode;
 
         if (parent.classList.contains('accordion_item__active')) {
             parent.classList.remove('accordion_item__active')
-        } else {
+        }
+        else {
             document
                 .querySelectorAll('.accordion_item')
                 .forEach((child) => child.classList.remove('accordion_item__active'))

@@ -84,7 +84,7 @@ h1 {
 }
 
 h2 {
-  font-weight: 700;
+  font-weight: 400;
   font-size: 42px;
   line-height: 135%;
   color: $black;
@@ -143,8 +143,8 @@ i {
   padding-top: 21.5px;
   padding-bottom: 21.5px;
 
-  @media (max-width: $breakepoint_xsm) {
-    width: 280px;
+  @media (max-width: $breakepoint_sm) {
+    width: 100%;
   }
 
   img {

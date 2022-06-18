@@ -10,6 +10,11 @@
     user-select: none;
 }
 
+label {
+    display: block;
+    text-indent: -10px;
+}
+
 .custom-checkbox {
     position: relative;
     padding-left: 27px;
@@ -56,7 +61,7 @@
 }
 
 .price__new {
-    width: 82px;
+    width: 84px;
     font-weight: 400;
     font-size: 26px;
     line-height: 25px;

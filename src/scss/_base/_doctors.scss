@@ -63,12 +63,11 @@
         position: relative;
         padding-top: 15px;
         margin-bottom: 35px;
+        overflow: hidden;
 
         @media (max-width: $breakepoint_xsm) {
             margin-bottom: 0;
         }
-
-        overflow: hidden;
 
         img {
             max-width: 310px;
@@ -149,6 +148,12 @@
     background: rgba(117, 138, 214, 0.85);
     top: 15px;
     left: 100%;
+}
+
+.doctor_slide:hover {
+    .doctor_card__title {
+        display: none;
+    }
 }
 
 .doctor_slide:hover .doctor_info {

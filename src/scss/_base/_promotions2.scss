@@ -91,19 +91,20 @@
 
     &__header {
         color: $white;
-        max-width: 600px;
+        max-width: 470px;
         margin-bottom: 50px;
 
         @media (max-width: $breakepoint_lg) {
-            max-width: auto;
+            max-width: 455px;
         }
 
         @media (max-width: $breakepoint_sm) {
+            max-width: 395px;
             font-size: 35px;
         }
 
         @media (max-width: $breakepoint_xsm) {
-            max-width: 300px;
+            max-width: 290px;
             margin-bottom: 40px;
             font-size: 27px;
         }
